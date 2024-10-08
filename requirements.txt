@@ -1,0 +1,8 @@
+langchain-community
+fastapi
+uvicorn
+torch
+pydantic         
+sentence-transformers
+faiss-cpu
+ctransformers                                                                                  
