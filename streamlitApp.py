@@ -88,12 +88,7 @@ if user_input:
 
     # Use spinner to show loading
     with st.spinner('Processing...'):
-<<<<<<< HEAD
-        # Generate response using the LLM
-        result = qa({"query": conversation_context})
-=======
         result = asyncio.run(async_qa(conversation_context))
->>>>>>> 46339be720948366883f86a83215535baae270ec
         answer = result["result"]
         sources = result["source_documents"]
 
@@ -113,8 +108,4 @@ if user_input:
         for doc in sources:
             source_name = doc.metadata.get('source', 'Unknown Source')
             page_number = doc.metadata.get('page', 'N/A')
-<<<<<<< HEAD
             st.markdown(f"- {source_name} (Page {page_number})")
-=======
-            st.markdown(f"- {source_name} (Page {page_number})")
->>>>>>> 46339be720948366883f86a83215535baae270ec
