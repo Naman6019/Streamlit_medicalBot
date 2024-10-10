@@ -40,7 +40,7 @@ def load_llm():
     llm = CTransformers(
         model="TheBloke/Llama-2-7B-Chat-GGML",
         model_type="llama",
-        max_new_tokens=256,  # Reduced token limit
+        max_new_tokens=128,  # Reduced token limit
         temperature=0.7,
         device='cuda' if torch.cuda.is_available() else 'cpu'
     )
