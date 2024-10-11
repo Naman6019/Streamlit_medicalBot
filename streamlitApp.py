@@ -73,7 +73,7 @@ async def async_qa(query):
     return result
 
 # Streamlit UI
-st.title("Medical Chatbot")
+st.title("CareConect")
 
 user_input = st.text_input("You:", key="user_input")
 
