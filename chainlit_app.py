@@ -60,7 +60,7 @@ def qa_bot():
 async def start():
     chain = qa_bot()
     cl.user_session.set("chain", chain)
-    await cl.Message(content="Hi, Welcome to Medical Bot. What is your query?").send()
+    await cl.Message(content="Hi, Welcome to CareConnect. What is your query?").send()
 
 @cl.on_message
 async def main(message: cl.Message):
